@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AppMachine</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <nav class="navbar ">
+    <div class="navbar-brand">
+      <%= link_to "AppMachine", root_url, class: "navbar-item" %>
+
+      <div class="navbar-burger burger" data-target="pagesTopNavMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="pagesTopNavMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <%= link_to "Home", root_url, class: "navbar-item" %>
+      </div>
+
+      <div class="navbar-end">
+        <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_url, method: "delete", class: "navbar-item" %>
+        <% else %>
+        <%= link_to "Sign Up", new_user_registration_url, class: "navbar-item" %>
+        <%= link_to "Log In", new_user_session_url, class: "navbar-item" %>
+        <% end %>
+      </div>
+    </div>
+  </nav>
+
+  <%= render "shared/flash" %>
+  <%= yield %>
+
+</body>
+</html>

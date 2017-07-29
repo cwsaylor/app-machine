@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half is-offset-one-quarter">
+        <h1 class="title">Resend unlock instructions</h1>
+
+        <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="field">
+          <%= f.label :email, class: "label" %>
+          <div class="control">
+            <%= f.email_field :email, autofocus: true, class: "input" %>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <%= f.button "Resend unlock instructions", type: "submit", class: "button is-primary" %>
+          </div>
+        </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render "users/shared/links" %>

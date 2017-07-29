@@ -1,0 +1,10 @@
+<%- if has_flashes? %>
+<div class="container">
+  <%- flash.reject { |k, v| v.blank? }.each do |key, message| %>
+  <div class="notification alert <%= flash_class(key) %>">
+    <button class="delete alert_close"></button>
+    <%= message %>
+  </div>
+  <%- end %>
+</div>
+<%- end %>
