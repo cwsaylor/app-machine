@@ -12,10 +12,10 @@ See the [webpacker](https://github.com/rails/webpacker) page for how to add your
 - [ ] Install ruby 2.4.1.
 - [ ] Edit db/seeds.rb file and replace with your email and password.
 - [ ] `bundle install`
+- [ ] `yarn install`
 - [ ] `rake db:create`
 - [ ] `rake db:migrate`
 - [ ] `rake db:seed`
-- [ ] `npm install`
 - [ ] `bin/server` to start a server on port 5000
 
 ## Features
