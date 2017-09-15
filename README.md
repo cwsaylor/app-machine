@@ -9,7 +9,7 @@ See the [webpacker](https://github.com/rails/webpacker) page for how to add your
 ## Setup
 
 - [ ] Globally replace AppMachine, and app_machine with your application name.
-- [ ] Install ruby 2.4.1.
+- [ ] Install ruby 2.4.2.
 - [ ] Edit db/seeds.rb file and replace with your email and password.
 - [ ] `bundle install`
 - [ ] `yarn install`
