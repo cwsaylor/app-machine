@@ -11,14 +11,12 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require jquery
 //= require turbolinks
+//= require jquery/dist/jquery
+//= require popper.js/dist/umd/popper
+//= require bootstrap/dist/js/bootstrap
 //= require_tree .
 
 $( document ).on('turbolinks:load', function() {
   console.log("Turbolinks loaded");
-});
-
-$( document ).on('click', '.alert_close', function() {
-  $(this).parent().remove();
 });

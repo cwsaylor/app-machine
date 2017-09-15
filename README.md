@@ -2,7 +2,7 @@
 
 AppMachine is a starter Ruby on Rails 5.1 app centered around Rails 5.1,
 [Devise](https://github.com/plataformatec/devise),
-[Bulma.io](http://bulma.io/), and Postgresql.
+[Bootstrap](http://getbootstrap.com/), and Postgresql.
 It includes an agnostic install of webpacker.
 See the [webpacker](https://github.com/rails/webpacker) page for how to add your flavor of javascript.
 
@@ -20,7 +20,7 @@ See the [webpacker](https://github.com/rails/webpacker) page for how to add your
 
 ## Features
 
-* [Bulma.io](http://bulma.io/)
+* [Bootstrap](http://getbootstrap.com/)
 * [Devise](https://github.com/plataformatec/devise) setup and styled with Bulma.
 * [Foreman](https://github.com/ddollar/foreman)
 * [Font Awesome](https://github.com/FortAwesome/font-awesome-sass)
@@ -29,4 +29,4 @@ See the [webpacker](https://github.com/rails/webpacker) page for how to add your
 
 ## Notes
 
-* jQuery is included to add some code for closing the flash dialogs. Bulma does not include javascript.
+* jQuery is included.

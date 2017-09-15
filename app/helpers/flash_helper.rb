@@ -1,11 +1,11 @@
 module FlashHelper
   ALERT_TYPES = {
-    notice:  'is-success',
-    alert:   'is-danger'
+    notice:  'alert-success',
+    alert:   'alert-danger'
   }
 
   def flash_class(key)
-    ALERT_TYPES.fetch(key.to_sym, "is-warning")
+    ALERT_TYPES.fetch(key.to_sym, "alert-warning")
   end
 
   def has_flashes?

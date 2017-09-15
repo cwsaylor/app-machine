@@ -1,4 +1,6 @@
 class Users::UnlocksController < Devise::UnlocksController
+  layout "half_width"
+
   # GET /resource/unlock/new
   # def new
   #   super
