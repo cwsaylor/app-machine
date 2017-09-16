@@ -16,7 +16,7 @@ See the [webpacker](https://github.com/rails/webpacker) page for how to add your
 - [ ] `rake db:create`
 - [ ] `rake db:migrate`
 - [ ] `rake db:seed`
-- [ ] `bin/server` to start a server on port 5000
+- [ ] `bin/server` to start a server on port 3000
 
 ## Features
 
@@ -24,9 +24,10 @@ See the [webpacker](https://github.com/rails/webpacker) page for how to add your
 * [Devise](https://github.com/plataformatec/devise) setup and styled with Bulma.
 * [Foreman](https://github.com/ddollar/foreman)
 * [Font Awesome](https://github.com/FortAwesome/font-awesome-sass)
+* jQuery
 * Pages controller with an index file.
 * bin/server script that runs foreman with a Procfile.dev
 
-## Notes
+## TODO
 
-* jQuery is included.
+* Sidekiq
